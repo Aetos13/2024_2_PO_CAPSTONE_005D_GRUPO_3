@@ -1,0 +1,72 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Home = () => {
+  return (
+    <div className="home-page">
+      <header>
+        <h1>Bienvenido a la Clínica OCES</h1>
+        <nav>
+          <ul className="navigation">
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/about">Sobre Nosotros</Link>
+            </li>
+            <li>
+              <Link to="/cursos">Cursos</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section className="hero">
+          <h2>Tu salud, nuestra prioridad</h2>
+          <p>
+            Desde aquí podrás acceder a nuestros servicios de capacitación en
+            kinesiología y salud física.
+          </p>
+          <p>
+            Si ya tienes una cuenta, <Link to="/login">inicia sesión</Link>.
+          </p>
+        </section>
+
+        <section className="services">
+          <h2>Servicios Principales</h2>
+          <div className="service">
+            <h3>Cursos de Kinesiología</h3>
+            <p>
+              Ofrecemos una variedad de cursos para formar a profesionales en
+              kinesiología, desde niveles básicos hasta avanzados.
+            </p>
+          </div>
+          <div className="service">
+            <h3>Certificaciones</h3>
+            <p>
+              Brindamos certificaciones reconocidas en el campo de la salud
+              física y kinesiología.
+            </p>
+          </div>
+          <div className="service">
+            <h3>Consultas Especializadas</h3>
+            <p>
+              Realizamos consultas y evaluaciones personalizadas para el
+              bienestar físico de nuestros pacientes.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2024 Clínica OCES. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;

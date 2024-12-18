@@ -1,0 +1,53 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const About = () => {
+  return (
+    <div className="about-page">
+      <header>
+        <h1>Sobre Nosotros</h1>
+        <nav>
+          <ul className="navigation">
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/about">Sobre Nosotros</Link>
+            </li>
+            <li>
+              <Link to="/cursos">Cursos</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section className="about-section">
+          <h2>Nuestra Misión</h2>
+          <p>
+            En Clínica OCES, nuestra misión es brindar servicios de salud física y capacitación de alta calidad, contribuyendo al bienestar de la comunidad a través de la educación y la atención personalizada.
+          </p>
+
+          <h2>Nuestra Visión</h2>
+          <p>
+            Aspiramos a ser líderes en la formación de profesionales en kinesiología y en la provisión de servicios de salud física, promoviendo un enfoque integral y humano.
+          </p>
+
+          <h2>Nuestro Equipo</h2>
+          <p>
+            Contamos con un equipo de expertos en kinesiología y salud física, comprometidos con el desarrollo de nuestros alumnos y el bienestar de nuestros pacientes.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2024 Clínica OCES. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default About;
